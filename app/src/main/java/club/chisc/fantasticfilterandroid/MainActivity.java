@@ -253,7 +253,6 @@ public class MainActivity extends AppCompatActivity {
                 matrix.setRotate(rotation);
                 fullSizeOrigin = MediaStore.Images.Media.getBitmap(getContentResolver(), selectedFile);
                 fullSizeOrigin = Bitmap.createBitmap(fullSizeOrigin, 0, 0, fullSizeOrigin.getWidth(), fullSizeOrigin.getHeight(), matrix, true);
-                //TODO: 自定義長寬
                 int h = fullSizeOrigin.getHeight();
                 int w = fullSizeOrigin.getWidth();
                 if (h > w) {
