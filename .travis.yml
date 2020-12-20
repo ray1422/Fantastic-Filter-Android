@@ -2,3 +2,14 @@ language: android
 dist: trusty
 before_install:
  - chmod +x gradlew
+jdk:
+  - oraclejdk8
+script:
+  - ./gradlew testDebug
+before_cache:
+  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+cache:
+  directories:
+    - $HOME/.m2
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
