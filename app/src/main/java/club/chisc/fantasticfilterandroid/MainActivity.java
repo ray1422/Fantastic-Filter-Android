@@ -322,6 +322,8 @@ public class MainActivity extends AppCompatActivity {
                 case ExifInterface.ORIENTATION_ROTATE_270:
                     rotation = 270;
                     break;
+                default:
+                    rotation = 0;
             }
 
         } catch (IOException e) {
